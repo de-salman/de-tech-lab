@@ -283,11 +283,11 @@ export default function Home() {
               >
                 web development, social media management, and digital marketing
               </Link>
-              . Since our inception, we've worked with startups and established
-              businesses to craft unique online experiences, driving growth and
-              visibility through tailored digital strategies. Our expertise
-              spans across SEO, responsive design, and cutting-edge web
-              technologies, ensuring impactful results.
+              . Since our inception, we&apos;ve worked with startups and
+              established businesses to craft unique online experiences, driving
+              growth and visibility through tailored digital strategies. Our
+              expertise spans across SEO, responsive design, and cutting-edge
+              web technologies, ensuring impactful results.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (

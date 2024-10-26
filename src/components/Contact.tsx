@@ -57,7 +57,7 @@ function Contact() {
     }
 
     try {
-      let formData = new FormData();
+      const formData = new FormData();
       formData.append("Name", input.name);
       formData.append("Email", input.email);
       formData.append("Phone", input.contact);
