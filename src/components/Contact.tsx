@@ -87,7 +87,7 @@ function Contact() {
       </p>
       <div className="max-w-3xl rounded-lg border border-[#464c6a] p-3 text-white lg:p-5">
         <p className="text-sm text-[#d3d8e8]">
-          If you have any questions or concerns, please don't hesitate to
+          If you have any questions or concerns, please don&apos;t hesitate to
           contact us.
         </p>
         <form onSubmit={handleSendMail} className="mt-6 flex flex-col gap-4">
