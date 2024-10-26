@@ -4,12 +4,13 @@ A sleek, modern, and responsive portfolio bootstrapped with [create-t3-app](http
 
 [Website Preview](https://github.com/wendoj/portfolio/assets/77996774/b73b02d7-0657-41e3-9124-e6d04b17fe93)
 
-[🔗 Link to portfolio](https://www.wendoj.codes)
+[🔗 Link to portfolio](https://www.detechlab.com)
 
 All you need to know about me, my projects and skills can be found here. Personalize the portfolio by modifying `src/pages/index.tsx` and `src/styles/globals.css` to emulate your own portfolio. Made some improvements and want to share? Open a pull request.
 For any issues, feel free to report them here.
 
 ## 🎉 Features
+
 - **Responsive Design**: The portfolio is designed to be fully responsive, providing an optimal viewing experience across a wide range of devices from desktops to mobile phones.
 - **Easy Customization**: The portfolio structure is straightforward and well organized, making it easy to customize and showcase your unique set of skills and projects.
 - **Stunning UI/UX Design**: The portfolio boasts a sleek and modern design, using smooth animations to capture the attention of potential employers or clients.
@@ -18,12 +19,15 @@ For any issues, feel free to report them here.
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 To get started with this portfolio, ensure that you have the following installed on your system:
+
 - Node.js
 - npm
 - git
 
 ## 🛠️ Installation
+
 Follow the steps below to clone and run this project on your local system:
 
 ```bash
@@ -40,6 +44,7 @@ $ git remote remove origin
 <br />
 
 Then install the required dependencies:
+
 ```bash
 # Install dependencies
 $ npm install
@@ -47,8 +52,8 @@ $ npm install
 # Start the development server:
 $ npm run dev
 ```
-Now, open your browser and navigate to `http://localhost:3000` to view your portfolio live.
 
+Now, open your browser and navigate to `http://localhost:3000` to view your portfolio live.
 
 ## How do I deploy this?
 

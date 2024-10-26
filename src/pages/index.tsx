@@ -9,6 +9,8 @@ import {
   SearchCheck,
   Eye,
   MonitorSmartphone,
+  Smartphone,
+  Users,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -26,76 +28,79 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+import ContactSection from "@/components/ContactSection";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
+  { label: "Years of experience", value: "5+" },
+  { label: "Technologies mastered", value: "10+" },
   { label: "Companies worked with", value: "15+" },
 ];
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "Ai Brilliance",
+    description:
+      "Empower Your Learning and Upskill for Data Science, Machine Learning, and AI Career Path",
+    image: "/assets/portfolio1.png",
+    href: "https://www.aibrilliance.com/",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
+    title: "Swiss Auto",
+    description:
+      "Your Trusted Partner for Auto Repair Services in Saudi Arabia",
+    image: "/assets/portfolio2.png",
+    href: "https://www.swissauto.me/",
   },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    title: "Richemont Masterbaker ",
+    description: "Master the Art of Baking with Richemont",
+    image: "/assets/portfolio3.png",
+    href: "https://www.richemont-masterbaker.com/",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "Reels Smart Technologies",
+    description: "Raise The Bar on Luxury Smart Homes & Offices",
+    image: "/assets/portfolio4.png",
+    href: "https://reelssmarttechnologies.com/en/",
   },
   {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    title: "Life Line Dubai",
+    description: "Quality Without Compromise",
+    image: "/assets/portfolio5.png",
+    href: "https://modernfamilymedicalcentre.com/",
   },
 ];
 
 const services = [
   {
-    service: "Frontend Development",
+    service: "Web Development",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "Building high-performance websites tailored to your business needs, using the latest web technologies like React, Next.js, and more.",
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "Social Media Management",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
+      "Strategizing and managing your social media presence to drive engagement and connect with your audience effectively.",
+    icon: Users,
   },
   {
     service: "SEO Optimization",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Boosting your website’s search engine rankings to enhance visibility and attract organic traffic.",
     icon: SearchCheck,
   },
   {
-    service: "Responsive Design",
+    service: "Responsive Web Design",
     description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
+      "Crafting seamless experiences across all devices, ensuring your website looks great and works flawlessly everywhere.",
     icon: MonitorSmartphone,
   },
   {
-    service: "Backend Development",
+    service: "Digital Marketing",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
-    icon: Eye,
+      "Creating comprehensive digital marketing strategies that encompass SEO, content marketing, email campaigns, and social media advertising.",
+    icon: Smartphone,
   },
 ];
 
@@ -190,9 +195,9 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>web development</span>
+              <span className={styles.pill}>social media</span>
+              <span className={styles.pill}>digital marketing</span>
             </div>
             <div>
               <h1
@@ -202,11 +207,11 @@ export default function Home() {
                 data-scroll-direction="horizontal"
               >
                 <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
-                  Hello, I&apos;m
+                  Welcome to
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  De Tech Lab
                 </span>
               </h1>
               <p
@@ -215,8 +220,9 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                Your go-to partner for cutting-edge web development, digital
+                marketing, and social media solutions that elevate your online
+                presence.
               </p>
             </div>
             <span
@@ -225,7 +231,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:contact@detechlab.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -268,20 +274,20 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+              At <strong>De Tech Lab</strong>, we specialize in{" "}
               <Link
-                href="https://create.t3.gg/"
+                href="https://detechlab.com"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+                web development, social media management, and digital marketing
+              </Link>
+              . Since our inception, we've worked with startups and established
+              businesses to craft unique online experiences, driving growth and
+              visibility through tailored digital strategies. Our expertise
+              spans across SEO, responsive design, and cutting-edge web
+              technologies, ensuring impactful results.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -318,7 +324,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div data-scroll data-scroll-speed=".4" className="my-64">
+          <div data-scroll data-scroll-speed=".4">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Projects
             </span>
@@ -401,15 +407,16 @@ export default function Home() {
             >
               <div className="flex flex-col py-6 xl:p-6">
                 <h2 className="text-4xl font-medium tracking-tight">
-                  Need more info?
+                  Need help boosting your business?
                   <br />
                   <span className="text-gradient clash-grotesk tracking-normal">
-                    I got you.
+                    We’ve got it covered.
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
-                  Here are some of the services I offer. If you have any
-                  questions, feel free to reach out.
+                  Explore the services we offer. Feel free to reach out if you
+                  have any questions or want to discuss how we can help your
+                  business thrive.
                 </p>
               </div>
               {services.map((service) => (
@@ -430,27 +437,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact */}
-        <section id="contact" data-scroll-section className="my-64">
-          <div
-            data-scroll
-            data-scroll-speed=".4"
-            data-scroll-position="top"
-            className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
-          >
-            <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s work{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
-            </h2>
-            <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
-            </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
-          </div>
-        </section>
+        <ContactSection />
       </div>
     </Container>
   );
