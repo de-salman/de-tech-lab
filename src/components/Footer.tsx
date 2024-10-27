@@ -34,7 +34,7 @@ export default function Footer() {
               passHref
               className="text-foreground transition hover:text-primary"
             >
-              De Tach Lab
+              De Tech Lab
             </Link>
           </p>
           <hr className="hidden h-6 border-l border-muted md:flex" />
